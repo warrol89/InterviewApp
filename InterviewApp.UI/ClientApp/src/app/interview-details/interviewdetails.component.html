@@ -1,0 +1,48 @@
+<form class="interview-form">
+        <div class="row">
+                <mat-form-field class="col-sm-6">
+                        <input matInput placeholder="Name">
+                </mat-form-field>
+                <mat-form-field class="col-sm-3">
+                        <input matInput placeholder="Experience">
+                </mat-form-field>
+                <button mat-button>Upload Resume</button>
+        </div>
+        <div class="row">      
+                <mat-form-field class="col-sm-6">
+                        <input matInput placeholder="Phone Number">
+                </mat-form-field>
+                <mat-form-field class="col-sm-6">
+                        <input matInput placeholder="Name of L1">
+                </mat-form-field>
+        </div>
+        <div class="row">
+                <mat-form-field class="col-sm-6">
+                        <input matInput placeholder="Email address">
+                </mat-form-field>
+                <mat-form-field class="col-sm-6">
+                        <input matInput placeholder="Name of L2">
+                </mat-form-field>
+        </div>
+        <div class="row">
+                <mat-form-field class="col-sm-6">
+                        <textarea matInput placeholder="Previous Companies"></textarea>
+                </mat-form-field>
+                <mat-form-field class="col-sm-6">
+                        <input matInput placeholder="Human Resource(HR)">
+                </mat-form-field>
+        </div>
+        <div class="row">
+                <mat-form-field class="col-sm-6">
+                        <textarea matInput placeholder="Skill Set"></textarea>
+                </mat-form-field>
+                <mat-form-field>
+                       <mat-label>Status</mat-label>
+                       <mat-select>
+                           <mat-option *ngFor="let status of statuses" [value]="status.value">
+                             {{status.viewValue}}
+                           </mat-option>
+                         </mat-select>                                           
+                </mat-form-field>                         
+        </div>
+</form>
